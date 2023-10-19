@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 1550px;
+    margin: auto;
+}
+header {
+    display: flex;
+    width: auto;
+    height: 62px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
+}
+.head{
+    display: flex;
+    align-items: center;
+}
+header p{
+    font-size: 16px;
+    font-weight: 400; 
+    padding-right: 820px;   
+}
+.zvon {
+    background-color: #FFA019;
+    border-radius: 10px;
+    border: 0;
+    width: 184px;
+    height: 37px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.zvon:hover {
+    background-color: #ee9519;
+    cursor: pointer;
+    border: 2px solid #FFA019;
+}
+header h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-right: 350px;
+}
+.scIMG{
+    min-width: 1024px;
+    height: 877px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%),
+    url('../img/scooter1.jpg') no-repeat center top / cover;     
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.menu-item {
+    align-items: center;
+}
+.menu-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+    padding-right: 69px;
+}
+.scIMG{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 277px;
+}
+
+.scIMG h1{
+    color: #FFF;
+    font-size: 56px;
+    font-weight: 300;
+}
+.scIMG p{
+    padding-top: 20px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.catalog {
+    background-color: #fff;
+    width: 137px;
+    height: 37px;
+    border-radius: 10px;
+    border:0;
+    font-weight: 700;   
+}
+.h1{
+    padding-top: 100px;
+    font-size: 34px;
+    font-weight: 300;
+}
+.advantages-txt{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+.column {
+    list-style-type: none;
+    margin-right: 245px;
+    margin-top: 104px;
+    font-weight: lighter;
+}
+.column1 {
+    list-style-type: none;
+    font-weight: lighter;   
+    margin-right: auto;
+}
+.advantages{
+  display: flex;  
+  align-items: center;
+  padding-bottom: 20px;
+}
+.txt{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.form {
+    margin-top: 79px;
+    background-color: #FFA019;
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-div {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.form-text {
+    color: #fff;
+}
+.textarea {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
