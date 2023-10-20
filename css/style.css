@@ -1,7 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,21 +14,36 @@ body {
     max-width: 1550px;
     margin: auto;
 }
-header {
-    display: flex;
-    width: auto;
+
+.bg-img {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%),
+    url('../img/scooter1.jpg') no-repeat center top / cover;
+    height:1500px ;
+}
+
+.wrap {
+    margin: 100px 0px;
+}
+
+.header {
+    position: relative;
     height: 62px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
+    background-color: #fff;
 }
-.head{
+
+.head {
+    padding-top: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-header p{
+
+header p {
     font-size: 16px;
-    font-weight: 400; 
-    padding-right: 820px;   
+    font-weight: 400;
 }
+
 .zvon {
     background-color: #FFA019;
     border-radius: 10px;
@@ -38,93 +54,112 @@ header p{
     font-size: 16px;
     font-weight: 700;
 }
+
 .zvon:hover {
     background-color: #ee9519;
     cursor: pointer;
     border: 2px solid #FFA019;
 }
-header h1{
+
+.nav {
+    background-color: #fff;
+    height: 62px;
+}
+
+header h1 {
     font-size: 30px;
     font-weight: 700;
-    padding-right: 350px;
 }
-.scIMG{
-    min-width: 1024px;
-    height: 877px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%),
-    url('../img/scooter1.jpg') no-repeat center top / cover;     
+.scIMG {
+    position: absolute;
+    padding-top: 400px;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    max-width: 690px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    line-height: 50px;
 }
+
 .menu {
     list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 30px
 }
 .menu-item {
     align-items: center;
 }
 .menu-link {
     color: rgb(0, 0, 0);
-    text-decoration: none; 
-    padding-right: 69px;
-}
-.scIMG{
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    padding: 277px;
+    text-decoration: none;
 }
 
-.scIMG h1{
+.scIMG h1 {
     color: #FFF;
     font-size: 56px;
     font-weight: 300;
+    padding-bottom: 20px;
 }
-.scIMG p{
-    padding-top: 20px;
+
+.scIMG p {
     color: #FFF;
     font-size: 20px;
     font-weight: 300;
-    padding-bottom: 20px;
 }
-.catalog {
+.catalogi {
     background-color: #fff;
     width: 137px;
     height: 37px;
     border-radius: 10px;
-    border:0;
-    font-weight: 700;   
+    border: 0;
+    font-weight: 700;
 }
-.h1{
-    padding-top: 100px;
+
+.h1 {
     font-size: 34px;
     font-weight: 300;
 }
-.advantages-txt{
+
+.advantages-txt {
     color: #000;
     font-size: 20px;
     font-weight: 300;
     display: flex;
     align-items: center;
 }
+.advantages1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 99px;
+}
 .column {
     list-style-type: none;
-    margin-right: 245px;
-    margin-top: 104px;
     font-weight: lighter;
 }
 .column1 {
     list-style-type: none;
-    font-weight: lighter;   
+    font-weight: lighter;
     margin-right: auto;
 }
-.advantages{
-  display: flex;  
-  align-items: center;
-  padding-bottom: 20px;
+
+.advantages {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
 }
-.txt{
+.txt {
     margin-top: 30px;
     font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing:2px;
+    line-height: 30px;
+    margin: 0;   
 }
 .form {
     margin-top: 79px;
@@ -132,18 +167,378 @@ header h1{
     font-size: 18px;
     font-weight: 500;
 }
+
 .form-div {
     display: flex;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.form-text {
-    color: #fff;
-}
-.textarea {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
+.form-text {
+    color: #fff;
+    margin: 0;
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.textarea {
+    display: flex;
+    align-items: center;
+    gap: 30px;   
+    
+}
+
+.textarea-form {
+    width: 230px;
+    height: 45px;
+    align-items: center;
+    background-color:transparent;
+    border:solid 2px white;
+    color: white;
+    
+}
+
+.textarea button {
+    background-color: #fff;
+    width: 230px;
+    height: 45px;
+    border: 0;
+    font-weight: 700;
+}
+.peculiarities div {
+    display: flex;
+}
+.pl-mn{
+    gap: 130px;
+}
+.plus-minuses {
+    list-style-type: none;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    
+}
+.plus-minuses p{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+.txt2{
+    margin-top: 30px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing:2px;
+    line-height: 30px;
+    margin: 0;  
+}
+.choice{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.choice p {
+    padding-right: 20px;
+}
+.categori:hover{
+    background: #FFA019;
+    padding: 5px;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+.tovar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+.tovar-card img{
+    padding: 12px;
+    width: 255.618px;
+    height: 256.813px;
+    flex-shrink: 0;
+}
+.tovar-cat{
+    position: absolute;
+    z-index: 1;
+    background-color: #FFA019;
+    border-radius:0 10px 10px 0;
+    padding: 5px;
+    
+}
+.tovar-card-txt{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.tovar-card{
+    width: 270px;
+    height: 406px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    
+}
+.card-txt{
+    align-items: center;
+       
+}
+.tovar-card p{
+    padding-left: 27.8px;
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;   
+}
+.money1{
+    padding-top: 27px;
+    padding-left: 27.8px;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.tovar-card:hover{
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.50);
+}
+.consultant{
+    padding-bottom: 200px;
+}
+.consultant1{
+  display: flex;
+  gap: 34px;
+  justify-content: space-between;
+}
+.consultant-card{
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 202px;
+    flex-shrink: 0;
+}
+.consultant-name{
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.consultant-txt{
+   padding-left: 27.5px;
+}
+.consultant img{
+    width: 164px;
+    height: 164px;
+    flex-shrink: 0;
+}
+.consultant p{
+    color: #000;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+.consultant a{
+    border-radius: 7px;
+    background: #FFA019;
+    color: #FFF;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 5px;
+    text-decoration: none;
+}
+.brand{
+    color: #9B9B9B;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    justify-content: space-between;
+    display: flex;
+}
+.info{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    justify-content: space-between;
+    
+}
+.info-bl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.40);
+    z-index: 1;
+    width: 320px;
+    height: 320px;
+    
+}
+.info img{
+    width: 320px;
+    height: 320px;
+}
+.info-text{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 2;   
+    top:calc(45%); 
+}
+.card-inf{
+    display: flex;
+    position: relative;
+    max-width: 320px;
+    z-index: 0;
+
+    
+}
+.card {
+    display: flex;
+    position: relative;
+    max-width: 261px;
+    z-index: 0;
+}
+.footer-content {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text2 {
+    display: inline-flex;
+    flex-direction: column;
+    color: #8191A6;
+    font-size: 14px;
+    font-weight: 400;
+}
+.right-column-footer {
+    gap: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-column-footer {
+    width: 332px;
+    height: 184px;
+}
+.footer-text2 a {
+    text-decoration: none;
+    color: #8191A6;
+}
+.footer {
+    background: #F8F5F5;
+}
+.Helpful{
+    padding-bottom: 50px;
+}
+.bg-img2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%),
+    url('../img/scooter1.jpg') no-repeat center top / cover;
+    height:1200px ;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+.zvon2 {
+    background-color: #FFA019;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.Form-zvon{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+.Form-style{
+    background-color: #FFA019;
+    width: 700px;
+    height: 200px;
+}
+.Ftxt{
+    padding-top:10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.form-zvon{
+    gap: 10px;
+    padding-top:10px;
+    display: flex;
+    justify-content: center;
+}
+.Form-button{
+    gap: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding: 0 10px; 
+    font-size: 20px; 
+}
+
+@media(max-width:1024px){
+    .container{
+        max-width: 900px;
+    }
+    .tovar{
+        display: flex;
+    }
+    .scIMG{
+        top:70%;
+        left: 20%;
+    }
+    .bg-img{
+        height: 1000px;
+    }
+    .form-text{
+        font-size: 12px;
+    }
+    .info{
+        flex-wrap: wrap;
+    }
+    .catalog{
+        flex-wrap: wrap;
+    }
+    .brand{
+        font-size: 30px;
+    }
+    .consultant1{
+        flex-wrap: wrap;
+    }
+    .tovar{
+        flex-wrap: wrap;
+    }
+ 
+  
+}
